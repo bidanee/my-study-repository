@@ -1,2 +1,2 @@
-# -my-study-repository
-What I Learn
+# my-study-repository
+공부하는 repo
