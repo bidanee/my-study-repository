@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>다크 모드 테스트</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #eee;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOM 조작으로 다크 모드 만들기</h1>
+  <button id="darkModeButton">다크 모드 ON/OFF</button>
+
+  <script>
+    const button = document.getElementById('darkModeButton');
+    const body = document.body;
+
+    button.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
